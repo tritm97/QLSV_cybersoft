@@ -140,7 +140,7 @@ function layDuLieuLocal() {
     if (arr != null) {
         // chuyển đổi dữ liệu về lại kiểu dữ liệu ban đầu
         var newArr = JSON.parse(arr);
-        // vì các phương thức xử lý: thêm, xoá đều tác động vào arrSinhVien nhưng khi mới thì giá trị của arrSinhVien là [] nên ta sẽ gán mảng dưới local lên lại cho arrSinhVien
+        // vì các phương thức xử lý: thêm, xoá đều tác động vào arrSinhVien nhưng khi mới reload trang thì giá trị của arrSinhVien là [] nên ta sẽ gán mảng dưới local lên lại cho arrSinhVien
         arrSinhVien = newArr;
         renderGiaoDien();
     }
